@@ -18,7 +18,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5em;
     background: url(../imagens/chales_backl.jpg);
-    background-size: cover;
+    background-position: top center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -26,6 +26,9 @@ header{
     background-color: var(--vermelho-destaque);
     color: var(--texto-inverso);
     padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 header nav#menu ul#partes-site {
     display: flex;
@@ -63,14 +66,17 @@ article#ficha div.img img {
 }
 article#ficha div.redes-sociais{
     display: flex;
-    padding: 10px;
+    padding: 5px;
+    width: 150px;
     border: 4px solid var(--vermelho-destaque);
+    border-radius: 10px;
     list-style: none;
     background-color: var(--branco-destaque);
     color: var(--vermelho-destaque);
-    margin: 0px 147px 10px 147px;
+    margin: auto;
+    margin-bottom: 10px;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-content: center;
 }
 article#ficha div.text-ficha h2 {
@@ -109,6 +115,7 @@ article#lutas h2 {
 
 }
 article#lutas div.luta1 {
+    height: 350px;
     background-color: var(--vermelho-destaque);
     color: var(--texto-inverso);
     border: 2px solid var(--branco-destaque);
@@ -126,13 +133,15 @@ article#lutas div.luta1 h3 {
 }
 article#lutas div.luta1 iframe {
     width: 100%;
-    height: 315px;
+    height: 270px;
     overflow: hidden;
     border-radius: 15px;
 }
 article#especificacoes div.fisic {
     background-color: var(--cinza-claro);
     padding: 10px;
+    margin: 15px;
+    border-radius: 20px;
 }
 article#especificacoes div.fisic h3 {
     padding: 10px;
@@ -159,6 +168,8 @@ article#especificacoes div.fisic li.inf-d {
 article#especificacoes div.carreira {
     background-color: var(--vermelho-destaque);
     padding: 10px;
+    margin: 15px;
+    border-radius: 20px;
 }
 article#especificacoes div.carreira h3 {
     padding: 10px;
@@ -181,4 +192,44 @@ article#especificacoes div.carreira li.inf-c {
     font-size: 1.2em;
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
+}
+article#especificacoes div.recorde {
+    background-color: var(--cinza-destaque);
+    padding: 10px;
+    margin: 15px;
+    border-radius: 20px;
+}
+article#especificacoes div.recorde h3 {
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;;
+    color: var(--texto-inverso);
+    text-align: center;
+}
+article#especificacoes div.recorde li.inf-r {
+    list-style-position: inside;
+    background-color: var(--branco-destaque);
+    border: 5px solid var(--branco-destaque);
+    color: var(--cinza-destaque);
+    padding: 8px 8px 8px 10px;
+    border-radius: 10px;
+    margin: 5px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+article#titulos h2 {
+    border: 2px solid var(--branco-destaque);
+    background-color: #2e2a2ade;
+    color: var(--texto-inverso);
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin: 0px 80px 0px 80px;
+    text-align: center;
+    border-radius: 10px;
 }
