@@ -79,6 +79,12 @@ article#ficha div.redes-sociais{
     justify-content: space-evenly;
     align-content: center;
 }
+article#ficha div.redes-sociais a {
+    color: var(--vermelho-destaque);
+}
+article#ficha div.redes-sociais a:hover {
+    color: rgb(255, 32, 32);
+}
 article#ficha div.text-ficha h2 {
     font-family: "Sekuya", system-ui;
     font-size: 2.1em;
@@ -98,6 +104,7 @@ article#ficha div.text-ficha p {
     border-radius: 10px;
     background-color: rgba(73, 65, 65, 0.65);
     color: var(--texto-inverso);
+    text-align: justify;
     line-height: 1.4em;
     font-size: larger;
     font: bold;
@@ -163,7 +170,7 @@ article#especificacoes div.fisic li.inf-d {
     font-weight: normal;
     font-size: 1.2em;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
+    text-align: justify;
 }
 article#especificacoes div.carreira {
     background-color: var(--vermelho-destaque);
@@ -191,7 +198,7 @@ article#especificacoes div.carreira li.inf-c {
     font-weight: normal;
     font-size: 1.2em;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
+    text-align: justify;
 }
 article#especificacoes div.recorde {
     background-color: var(--cinza-destaque);
@@ -219,11 +226,11 @@ article#especificacoes div.recorde li.inf-r {
     font-weight: normal;
     font-size: 1.2em;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
+    text-align: justify;
 }
 article#titulos h2 {
     border: 2px solid var(--branco-destaque);
-    background-color: #2e2a2ade;
+    background-color: #2e2a2ae5;
     color: var(--texto-inverso);
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -233,3 +240,55 @@ article#titulos h2 {
     text-align: center;
     border-radius: 10px;
 }
+article#titulos div.desc-tit {
+    background-color: var(--vermelho-destaque);
+    color: var(--texto-inverso);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+article#titulos div.desc-tit img {
+    width: 100%;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+article#titulos div.desc-tit p.t-tit {
+    background-color: var(--cinza-claro);
+    color: var(--texto-inverso);
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px 35px 15px 35px;
+}
+article#titulos div.desc-tit p {
+    background-color: var(--branco-destaque);
+    color: var(--preto);
+    border-radius: 10px;
+    padding: 8px;
+    text-overflow: clip;
+    margin: 5px 20px 5px 20px;
+    text-align: justify;
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer {
+    background-color: var(--cinza-destaque);
+    color: var(--texto-inverso);
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 15px;
+}
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--texto-inverso)
+} 
+footer a:hover {
+    color: var(--cinza-claro);
+}
+
